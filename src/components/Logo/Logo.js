@@ -1,9 +1,11 @@
 import React from 'react';
 import {Tilt} from 'react-tilt';
+import './Logo.css';
+import brain from './brain.png.png';
 
 const defaultOptions = {
 	reverse:        false,  // reverse the tilt direction
-	max:            35,     // max tilt rotation (degrees)
+	max:            50,     // max tilt rotation (degrees)
 	perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
 	scale:          1.1,    // 2 = 200%, 1.5 = 150%, etc..
 	speed:          1000,   // Speed of the enter/exit transition
@@ -16,8 +18,10 @@ const defaultOptions = {
 const Logo = () => {
     return (
         <div className='ma4 mt0'>
-            <Tilt className= "br2 shadow-2" options={defaultOptions} style={{ height: 250, width: 250 }}>
-                <div>👽</div>
+            <Tilt className="Tilts br2 shadow-2" options={defaultOptions} style={{ height: 250, width: 250 }}>
+                <div className='Image pa5'>
+					<img style= {{paddingTop :'5px' }}alt = 'logo' src = {brain}/>
+				</div>
             </Tilt>
         </div>
     );
