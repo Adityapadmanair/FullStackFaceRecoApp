@@ -24,9 +24,16 @@ const particlesLoaded = useCallback(async container => {
 }, []);
 
 
+
+
   return (
     <div className="App">
-      <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} />
+      <Particles className= "particles" 
+        id="tsparticles" 
+        url="http://foo.bar/particles.json" 
+        init={particlesInit} 
+        loaded={particlesLoaded} 
+        options={options}/>
       <Navigation />
       <Logo />
       <Rank />
