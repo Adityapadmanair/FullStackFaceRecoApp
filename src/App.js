@@ -37,7 +37,7 @@ const particlesLoaded = useCallback(async container => {
       <Navigation />
       <Logo />
       <Rank />
-      <ImageLinkForm />
+      <ImageLinkForm  />
 
       {/*<FaceRecognition /> */}
 
