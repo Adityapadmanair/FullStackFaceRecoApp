@@ -2,6 +2,7 @@ import React,{ useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import Navigation from './components/Navigation/Navigation';
+import Signin from './components/Signin/Signin';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
@@ -110,9 +111,11 @@ const App = () => {
          }}
      />
       <Navigation />
+      <Signin/>
       <Logo />
       <Rank />
       <ImageLinkForm  />
+   
 
       {/*<FaceRecognition /> */}
 
