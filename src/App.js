@@ -24,7 +24,29 @@ const particlesLoaded = useCallback(async container => {
 }, []);
 
 
-
+const options = {
+  // Define particle configuration here
+  fpsLimit: 60,
+  interactivity: {
+    detectsOn: "canvas",
+  },
+  particles: {
+    number: {
+      value: 80,
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#fff",
+      },
+    },
+    move: {
+      direction: "none",
+      outMode: "out",
+    },
+  },
+};
 
   return (
     <div className="App">
